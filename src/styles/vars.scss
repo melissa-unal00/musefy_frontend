@@ -1,0 +1,32 @@
+// $colors: (
+//   black: #000000,
+//   deepPurple: #2f1847,
+//   grey: #767b91,
+//   icyGrey: #c7ccdb,
+//   white: #ffffff,
+// );
+
+// $fonts: (
+//   Montserrat: "Montserrat",
+// );
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=Montserrat:wght@300;400;500;700&display=swap"); //fonts-variables
+
+$colors: (
+  intenseBlack: #111111,
+  black: #1c1c1c,
+  darkGray: #484848,
+  orangeShade1: #ef5c19,
+  orangeShade2: #ff8f15,
+  orangeShade3: #ffb340,
+  white: #ffffff,
+  grayShade1: #fff5eb,
+  grayShade2: #efe6e7,
+  grayShade3: #fcfbfb,
+  transparent: transparent,
+  error: #FF2525
+);
+
+$fonts: (
+  Montserrat: "Montserrat",
+);

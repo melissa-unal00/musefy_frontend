@@ -1,0 +1,26 @@
+@import "../../../styles/vars.scss";
+.player {
+  display: flex;
+  &__play-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: map-get($colors, white);
+    transition: 0.6s;
+    margin-top: 0.6rem;
+    &:hover {
+      cursor: pointer;
+      color: map-get($colors, orangeShade1);
+      transition: 0.6s;
+    }
+  }
+  &__name {
+    padding-top: 1rem;
+    font-size: 0.6rem;
+    color: white;
+  }
+}
+
+.test {
+  transform: scale(2.5);
+}

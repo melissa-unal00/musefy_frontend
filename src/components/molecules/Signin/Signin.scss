@@ -1,0 +1,31 @@
+@import "../../../styles/vars.scss";
+.signin__form {
+  &--styling {
+    padding: 5rem 0rem 5rem 0rem;
+    border-radius: 7rem;
+    margin: 2rem 5rem 2rem 5rem;
+    background-color: map-get($colors, black);
+    height: 40vh;
+  }
+}
+.formfield {
+  text-align: center;
+}
+.signin {
+  &__width {
+    width: 5rem;
+  }
+  &__margin {
+    margin: 1rem;
+  }
+  &__text{
+    color: map-get($colors, white);
+  }
+  &__error {
+    padding-bottom: 2rem;
+    color:  map-get($colors, error);
+  }
+  &__link {
+    color:  map-get($colors, orangeShade1);
+  }
+}

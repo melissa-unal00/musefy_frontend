@@ -1,0 +1,14 @@
+@import "../../../styles/vars.scss";
+
+.result-modal-normal {
+    padding: 2rem 0rem 2rem 0rem;
+    border-radius: 7rem;
+    margin: 2rem 3rem 2rem 3rem;
+    background-color: map-get($colors, black);
+    color:map-get($colors, white);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 25rem;
+}

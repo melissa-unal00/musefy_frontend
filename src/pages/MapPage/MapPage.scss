@@ -1,0 +1,52 @@
+@import "../../styles/vars.scss";
+@import "../../styles/mixin.scss";
+
+.map {
+    overflow: hidden;
+    &__popup {
+        display: flex;
+        column-gap: 10%;
+
+        &-username {
+            color: map-get($colors, orangeShade1);
+            margin-bottom: 0.3rem;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            @include linkColors(
+                map-get($colors, orangeShade1),
+                map-get($colors, orangeShade1)
+           );
+           &:hover{
+            box-shadow: 0 0 0.5rem 0.1rem map-get($colors, orangeShade1);
+           }
+            
+        }
+        &-location {
+            font-size: 0.7rem;
+            padding-bottom: 0.3rem;
+            color: map-get($colors, orangeShade3 )
+        }
+        &-user {
+            &-photo {
+                width: 5rem; 
+                height: 5rem; 
+                float: left; 
+            }
+        }
+        &-song {
+            font-size: 0.7rem;
+            &-cover {
+                width: 2rem;
+                height: 2rem;
+                margin-right: 0.5rem;
+                border-radius: 50%,
+            }
+        }
+    }
+}
+
+#song {
+    font-size: 0.7rem;
+}
+

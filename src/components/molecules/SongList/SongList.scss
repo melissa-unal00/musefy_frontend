@@ -1,0 +1,41 @@
+@import "../../../styles/vars.scss";
+@import "../../../styles/mixin.scss";
+
+.song {
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    background-color: transparent;
+    display: flex;
+    border-style: groove;
+    border-color: map-get($colors, darkGray);
+    border-radius: 1rem;
+
+    &__image {
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+        margin-top: 0.5rem;
+    }
+
+    &__title {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    &__like{
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    &__button {
+        border-radius: 1rem;
+        border: none;
+        color: map-get($colors, darkGray);
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+        cursor: pointer;
+        position: relative;
+        @include buttonColors(
+            map-get($colors, black),
+            map-get($colors, white),
+            map-get($colors, orangeShade1)
+       );
+    }
+}

@@ -1,0 +1,33 @@
+@import "../../../styles/vars.scss";
+
+.artist {
+    padding: 2rem 0rem 2rem 0rem;
+    border-radius: 7rem;
+    margin: 2rem 3rem 2rem 3rem;
+    background-color: map-get($colors, black);
+    color: map-get($colors, white);
+
+    min-height: 25rem;
+    &__info {
+        display: flex;
+        column-gap: 10%;
+        flex-direction: row;
+    }
+    &__image {
+        max-width: 25rem;
+        max-height: 25rem;
+        padding-left: 5rem;
+
+    }
+    // &__text {
+    //     font-size: 2rem;
+    // }
+    &__name {
+        font-size: 2rem;
+        color: map-get($colors, orangeShade1);
+        padding-bottom: 1rem;
+    }
+    &__gender {
+        padding-left: 0.5rem;
+    }
+}

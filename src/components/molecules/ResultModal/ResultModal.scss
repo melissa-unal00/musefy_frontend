@@ -1,0 +1,47 @@
+.result-modal {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+
+    &__container{
+        background-color: #202020;
+        border-radius: 2rem;
+        padding: 2rem;
+        min-width: 20rem;
+        min-height: 5rem;
+    }
+
+    &__input{
+        padding-bottom: 2rem;
+    }
+
+    &__button{
+        background-color: transparent;
+        border-style: none;
+        cursor: pointer;
+        color: white;
+        padding-bottom: 2rem;
+        margin-left: 100%;
+    }
+}
+
+// .MuiInputBase-input{
+//     ::placeholder{
+//         color: white;
+//     }
+//     ::focus{
+//         color: white;
+//     }
+// }
+
+.MuiInput-underline:after{
+    border-bottom: "2px solid #3f51b5"
+}

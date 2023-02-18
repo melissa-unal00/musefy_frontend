@@ -1,0 +1,52 @@
+@import "../../../styles/vars.scss";
+@import "../../../styles/mixin.scss";
+
+.signup__form {
+  &--styling {
+    padding: 5rem 0rem 5rem 0rem;
+    border-radius: 7rem;
+    margin: 2rem 5rem 2rem 5rem;
+    background-color: map-get($colors, black);
+  }
+}
+.formfield {
+  text-align: center;
+}
+.signup {
+  &__width {
+    width: 5rem;
+  }
+  &__margin {
+    margin: 1.5rem;
+  }
+  &__error {
+    padding: 2rem;
+    color:  map-get($colors, error);
+    font-size: 1.25rem;
+  }
+  &__title {
+    color: map-get($colors, white);
+    font-size: 1.25rem;
+  }
+}
+
+input#signup-photo {
+  display: none;
+}
+
+#signup-custom{
+  background-color: transparent;
+  color: map-get($colors, orangeShade1 );
+  border: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 2rem;
+  width: 2rem;
+  cursor: pointer;  
+  &:hover {
+      @include buttonColors(
+    map-get($colors, black),
+    map-get($colors, black),
+    map-get($colors, orangeShade1)
+  );
+  }
+}

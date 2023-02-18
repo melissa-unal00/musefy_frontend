@@ -1,0 +1,51 @@
+@import "../../../styles/vars.scss";
+
+.modal {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container{
+        background-color: #202020;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+
+    &__input{
+        padding-bottom: 2rem;
+    }
+
+    &__button{
+        position: relative;
+        background-color: transparent;
+        border-style: none;
+        cursor: pointer;
+        color: white;
+        padding-bottom: 1rem;
+        padding-left: 14rem;
+    }
+    &__error {
+        color: map-get($colors , error );
+        padding-bottom: 2rem;
+    }
+}
+
+// .MuiInputBase-input{
+//     ::placeholder{
+//         color: white;
+//     }
+//     ::focus{
+//         color: white;
+//     }
+// }
+
+.MuiInput-underline:after{
+    border-bottom: "2px solid #3f51b5"
+}

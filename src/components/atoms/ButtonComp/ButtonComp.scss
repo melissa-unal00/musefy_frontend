@@ -1,0 +1,20 @@
+@import "../../../styles/vars.scss";
+
+// .MuiButton-contained {
+//   background-color: map-get($colors, grayShade2);
+//   &:hover {
+//     background-color: map-get($colors, darkGray);
+//     color: white;
+//   }
+//   border-radius: 15px;
+// }
+
+.MuiButton-contained {
+  background-color: map-get($colors, darkGray);
+  color: map-get($colors, white);
+  &:hover {
+    background-color: map-get($colors, grayShade2);
+    color: map-get($colors, darkGray);
+  }
+  border-radius: 15px;
+}

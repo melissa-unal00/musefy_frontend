@@ -1,0 +1,43 @@
+@import "../../../styles/vars.scss";
+@import "../../../styles/mixin.scss";
+
+.slider {
+    &__range {
+        -webkit-appearance: none;
+        background-color: map-get($colors , white );
+        width: 15rem;
+        cursor: pointer;
+        height: 0.2rem;
+        border-radius: 2rem;
+        ::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 2rem;
+            height: 2rem;
+            background-color: red;
+            cursor: pointer;
+        }
+    }
+    &__thumb {
+        width: 1rem;
+        height: 1rem;
+        box-shadow: 0rem 0rem 1rem map-get($colors , black );
+        z-index: 10;
+        background-color:  map-get($colors , white );
+        border-radius: 50%;
+        top: 50%;
+        transform: translate(0%, 120%);
+        pointer-events: none;
+        user-select: none;
+    }
+    &__bar {
+        background-color:  map-get($colors , orangeShade1 );
+        width: 20%;
+        height: 0.2rem;
+        border-radius: 2rem;
+        top:50%;
+        transform: translateY(975%);
+        z-index:1;
+        user-select: none;
+        pointer-events:none;
+    }
+}

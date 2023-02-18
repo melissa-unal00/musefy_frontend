@@ -1,0 +1,122 @@
+@import "../../../styles/vars.scss";
+
+.chat {
+    &-hidden {
+        z-index:11;
+        position: fixed;
+        right: 0.5rem;
+        bottom: 0.5rem;
+        background-color: map-get($colors, intenseBlack);
+        width: 14rem;
+        color: map-get($colors, orangeShade1);
+        border-radius: 0.5rem;
+    }
+    bottom:4rem;   
+    z-index: 11;
+    position: fixed;
+    right:0;
+    background-color: map-get($colors, intenseBlack);
+    width: 14rem;
+    height: 15rem;
+    margin-right: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    color: map-get($colors, orangeShade1);
+    &__title {
+        display: flex;
+        padding: 0.2rem;
+        box-shadow: 0 0 0.5rem 0.1rem map-get($colors, orangeShade1);
+        border-radius: 0.5rem;
+        &-button {
+            margin-left: 7rem;  
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: map-get($colors, orangeShade1);;
+        }
+    }
+    &__container {
+        width:100%;
+        height:100%;
+        background-color: map-get($colors, intenseBlack);
+        box-shadow: 0 0 0.5rem 0.1rem map-get($colors, orangeShade1);
+    }
+    &__message{
+        &-me{
+        float:right;
+        flex-direction: column;
+        color: map-get($colors , intenseBlack );;
+        width: 9rem;
+        font-size: 0.7rem;
+        }
+        &-other{
+            float: left;
+            flex-direction: column;
+            width:8rem;
+            font-size: 0.7rem;
+            }
+
+        &-text-me{
+            background-color: map-get($colors , black );
+            border-radius: 1rem;
+            color: map-get($colors , white );
+            margin: 0.5rem 0.5rem 0rem 0.5rem;
+            padding:0.5rem;
+            font-size: 0.7rem;
+        }
+        
+        &-text-other{
+            background-color: map-get($colors , orangeShade1 );
+            border-radius: 1rem;
+            color: map-get($colors , white );
+            margin: 0.5rem 0.5rem 0rem 0.5rem;
+            padding:0.5rem;
+            font-size: 0.7rem;
+        }
+        &-author {
+            color: map-get($colors , white );
+            font-size: 0.6rem;
+            margin-left: 0.8rem;
+        }
+        &-time {
+            color: map-get($colors , white );
+            font-size: 0.6rem;
+            margin-left: 0.3rem;
+        }
+
+    }
+
+
+
+    &__button {
+    background-color: map-get($colors , intenseBlack );
+    border: none;
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.35rem;
+    transition: 0.5s;
+    color:map-get($colors , orangeShade1);
+    &:hover {
+        transition: 0.5s;
+        background-color: map-get($colors , orangeShade1 );
+        color: map-get($colors , intenseBlack );
+    }
+    }
+
+    &__input {
+    border: none;
+    border-bottom-left-radius: 0.5rem;
+    background-color: map-get($colors, intenseBlack );
+    color: map-get($colors, white);
+    width: 100%;
+    outline:none;
+    }
+
+    &__input-button {
+        box-shadow: 0 0 0.5rem 0.1rem map-get($colors, orangeShade1);
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+
+}
+

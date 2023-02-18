@@ -1,0 +1,33 @@
+@import "../../../styles/vars.scss";
+
+.open-searched-song {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    &__container { 
+        background-color: map-get($colors , black );
+        padding: 2rem 2rem 2rem 2rem;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    &__button {
+        background-color: transparent;
+        color: map-get($colors , white );
+        border: none;
+        cursor: pointer;
+        margin-left: 100%;
+        margin-bottom: 1rem;
+    }
+    &__song {
+        color: map-get($colors , white );
+    }
+}

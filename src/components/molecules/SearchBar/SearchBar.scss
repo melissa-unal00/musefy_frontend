@@ -1,0 +1,90 @@
+@import "../../atoms/Button/Button.scss";
+@import "../../../styles/vars.scss";
+
+
+#search-custom{
+    background-color: map-get($colors, white);
+    border: 0;
+    padding: 0.5rem 0rem 0rem 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    width: 2rem;
+    cursor: pointer;  
+    @include buttonColors(
+      map-get($colors, white),
+      map-get($colors, black),
+      map-get($colors, orangeShade1)
+    );
+}
+
+.searchbar{
+  input#search-normal {
+    background-color: map-get($colors, white);
+    border: 0;
+    padding: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input#search-photo {
+    display: none;
+  }
+
+  
+  &__input {
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+  }
+
+  &__icon-button {
+    display: grid;
+    place-items: center;
+    padding: 0rem 1rem 0rem 1rem;
+    border: 0;
+    height: 2rem;
+    @include buttonColors(
+      map-get($colors, white),
+      map-get($colors, black),
+      map-get($colors, orangeShade1)
+    );
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__upload-button {
+    display: grid;
+    place-items: center;
+    padding: 0rem 1rem 0rem 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border: 0;
+    height: 2rem;
+    @include buttonColors(
+      map-get($colors, white),
+      map-get($colors, black),
+      map-get($colors, orangeShade1)
+    );
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__result {
+    &-option{
+    background-color: map-get($colors, white);
+    width: 16rem;
+    text-align: center;
+    z-index: 10;
+    text-decoration: none;
+    color: map-get($colors, black);
+    border: none;
+    cursor: pointer;
+    }
+  }
+}
+

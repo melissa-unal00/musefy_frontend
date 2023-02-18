@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+.button {
+  font-family: "Montserrat", serif;
+  display: inline-block;
+  border-radius: 10px;
+  border: none;
+  color: #ffff;
+  text-align: center;
+  font-size: 11px;
+  padding: 10px 0px 10px 0px;
+  width: 100px;
+  opacity: 0.75;
+  cursor: pointer;
+  margin-top: 90px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+}
+
+.button::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 10px;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button:hover {
+  padding-right: 25px;
+}
+
+.button:hover::after {
+  opacity: 1;
+  right: 10px;
+}
+
+.header__button--orange-shade-1 {
+  background: #ef5c19;
+}
+
+.header__button--orange-shade-1:hover {
+  background: #d14b0f;
+}
+
+.header__button--orange-shade-1:active {
+  background: #802e09;
+}
+
+.header__button--orange-shade-2 {
+  background: #ff8f15;
+}
+
+.header__button--orange-shade-2:hover {
+  background: #eb7b00;
+}
+
+.header__button--orange-shade-2:active {
+  background: #954d00;
+}
+
+.header__button--orange-shade-3 {
+  background: #ffb340;
+}
+
+.header__button--orange-shade-3:hover {
+  background: #ffa317;
+}
+
+.header__button--orange-shade-3:active {
+  background: #c07300;
+}
+
+.header__button--orange-shade-3 {
+  background: #ffb340;
+}
+
+.header__button--orange-shade-3:hover {
+  background: #ffa317;
+}
+
+.header__button--orange-shade-3:active {
+  background: #c07300;
+}
+/*# sourceMappingURL=Button.css.map */

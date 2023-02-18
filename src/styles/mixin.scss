@@ -1,0 +1,26 @@
+@mixin buttonColors($background, $textColor, $hoverTextColor) {
+  color: $textColor;
+  background: $background;
+  transition: 0.5s;
+  &:hover {
+    background: darken($background, 8%);
+    color: $hoverTextColor;
+    transition: 0.5s;
+  }
+  &:active {
+    background: darken($background, 15%);
+    color: $hoverTextColor;
+  }
+}
+
+@mixin linkColors($textColor, $hoverTextColor) {
+  color: $textColor;
+  transition: 0.5s;
+  &:hover {
+    color: darken($textColor, 25%);
+    transition: 0.5s;
+  }
+  &:active {
+    color: darken($textColor, 35%);
+  }
+}

@@ -1,0 +1,135 @@
+.button {
+  font-family: "Montserrat";
+  display: inline-block;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 11px;
+  padding: 10px 0px 10px 0px;
+  width: 100px;
+  opacity: 0.75;
+  cursor: pointer;
+  margin-top: 90px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+}
+
+.button::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 10px;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button:hover {
+  padding-right: 25px;
+}
+
+.button:hover::after {
+  opacity: 1;
+  right: 10px;
+}
+
+.header__button--orange-shade-1 {
+  background: #c7ccdb;
+}
+
+.header__button--orange-shade-1:hover {
+  background: #aeb5cb;
+}
+
+.header__button--orange-shade-1:active {
+  background: #7985a9;
+}
+
+.header__button--orange-shade-2 {
+  background: #2f1847;
+}
+
+.header__button--orange-shade-2:hover {
+  background: #1b0e29;
+}
+
+.header__button--orange-shade-2:active {
+  background: black;
+}
+
+.header__button--orange-shade-3 {
+  background: #767b91;
+}
+
+.header__button--orange-shade-3:hover {
+  background: #63677b;
+}
+
+.header__button--orange-shade-3:active {
+  background: #3c3f4b;
+}
+
+.blog-card__button--white {
+  background: #ffffff;
+}
+
+.blog-card__button--white:hover {
+  background: #ebebeb;
+}
+
+.blog-card__button--white:active {
+  background: #bfbfbf;
+}
+
+.searchbar__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 150px;
+  height: 35px;
+}
+
+.searchbar__input .searchbar__icon-button {
+  background-color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 0;
+  width: 35px;
+  height: 35px;
+  background: #c7ccdb;
+}
+
+.searchbar__input .searchbar__icon-button:hover {
+  background: #aeb5cb;
+}
+
+.searchbar__input .searchbar__icon-button:active {
+  background: #7985a9;
+}
+
+.searchbar__input .searchbar__icon-button:hover {
+  cursor: pointer;
+}
+
+.searchbar input {
+  background-color: #c7ccdb;
+  border: 0;
+  font-size: 12px;
+  font-family: "Montserrat";
+  padding: 5px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+/*# sourceMappingURL=SearchBar.css.map */

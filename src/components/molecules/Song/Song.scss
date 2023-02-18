@@ -1,0 +1,75 @@
+@import "../../../styles/vars.scss";
+@import "../../../styles/mixin.scss";
+
+.song {
+    padding: 0rem 1rem 0.1rem 1rem;
+    background-color: transparent;
+    border-style: groove;
+    border-color: map-get($colors, darkGray);
+    border-radius: 1rem;
+    width: 30rem;
+
+    &__image {
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+        margin-top: 0.5rem;
+        object-fit: cover;
+    }
+
+    &__artist {
+        padding: 1rem 0rem 1rem 1rem;
+        text-decoration: none;
+         @include linkColors(
+            map-get($colors, orangeShade1),
+            map-get($colors, orangeShade1)
+       );
+    }
+
+    &__audio {
+        padding: 1rem 1rem 1rem 0.2rem;
+        color: map-get($colors, white )
+    }
+
+    &__play{
+        padding: 0rem 0rem 1rem 1rem;
+    }
+
+    &__like{
+        padding: 0rem 1rem 1rem 1rem;
+    }
+
+    &__button {
+        border-radius: 1rem;
+        border: none;
+        color: map-get($colors, darkGray);
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.3rem 1rem 0.3rem 1rem;
+        cursor: pointer;
+        position: relative;
+        @include buttonColors(
+            map-get($colors, darkGray),
+            map-get($colors, white),
+            map-get($colors, orangeShade1)
+       );
+
+       &-x {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: map-get($colors, white);;
+        font-size: 1.4rem;
+        float: right;
+        transition: 0.5s;
+        &:hover{
+          color: map-get($colors, orangeShade1);
+          transition: 0.5s;
+        }
+       }
+    }
+}
+
+.MuiSlider-colorSecondary{
+    color: map-get($colors, orangeShade1);
+}
